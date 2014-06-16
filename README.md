@@ -35,6 +35,8 @@ and import the SimpleCMake project:
 
 -> File -> Import .. -> Existing Code as Makefile Project
 
+The file import_existing_project.png shows where you can find this command.
+
 Select "GNU Autotools Toolchain" as Toolchain. This should set the 
 required include path automatically so you have working intelli sense.
 If this did not work, you need to set the path to the C++ 
@@ -50,6 +52,9 @@ include headers by hand:
 Add these path to the include folders:
 /usr/include/c++/4.4.7/
 /usr/include/c++/4.4.7/x86_64-redhat-linux
+
+Image import_project_settings.png shows you how the settings during
+the project import should look like.
 
 Press Ctrl+B to build the project.
 
@@ -78,7 +83,7 @@ git-cms-addpkg TrackingTools/TrackFitters
 scram b -j8
 
 Start eclipse now, only after you have set the CMSSW environment. Be sure to 
-run "scram b" at least once befor importing so Eclipse can find the make files.
+run "scram b" at least once before importing so Eclipse can find the make files.
 
 Use the folder containing CMSSW_5_3_19 as workspace. Run the same importing procedure
 as described for the simple project and make sure you select CMSSW_5_3_19/src to import.
@@ -92,6 +97,9 @@ Change the build command to "scram b"
         -> uncheck "Use default build command"
         -> type into the "Build command" field: "scram -j8"
 
+Image scram_b_setup.png shows you how the changed settings look like.
+
+Press Ctrl+B to test the new settings.
 
 In the same properties window, you need to add the include headers:
  -> C/C++ General
@@ -102,9 +110,12 @@ For the CMSSW source tree:
 
 ${CMSSW_RELEASE_BASE}/src/
 
-For the C++ header:
+For the C++ header ( might depend on your compiler version ):
 ${COMPILER_RUNTIME_OBJECTS}/include/c++/4.7.2/x86_64-unknown-linux-gnu/
 ${COMPILER_RUNTIME_OBJECTS}/include/c++/4.7.2/
+
+The image cmssw_paths.png shows you how the settings for the include 
+path should look like.
 
 ** Test out some features:
 - jump to declaration of types in the CMSSW code base
