@@ -71,7 +71,7 @@ Press Ctrl+B to build the project.
 - Git integration is hidden behind right-click in the Project Explorer and 
   then "Team ..."
 
-## CMMSW Project
+## CMSSW Project
 
 Setup a CMSSW environment with scram, as known:
 
