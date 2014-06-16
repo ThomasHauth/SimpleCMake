@@ -1,4 +1,4 @@
--- Introduction to using Eclipse with CMSSW --
+## Introduction Eclipse CDT
 
 The Eclipse IDE is a versatile application which can host various 
 program-language specific plugins. The plugin for C/C++ is called CDT.
@@ -21,7 +21,7 @@ wget http://mirror.switch.ch/eclipse/technology/epp/downloads/release/kepler/SR2
 tar xzf eclipse-cpp-kepler-SR2-linux-gtk-x86_64.tar.gz
 eclipse/eclipse
 
-## Simple CMake Project
+### Simple CMake Project
 
 You can use this simple cmake-based test program to test-drive the Eclipse IDE:
 
@@ -71,7 +71,7 @@ Press Ctrl+B to build the project.
 - Git integration is hidden behind right-click in the Project Explorer and 
   then "Team ..."
 
-## CMSSW Project
+### CMSSW Project
 
 Setup a CMSSW environment with scram, as known:
 
